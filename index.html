@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col list-stream">
+            <div class="sticky">
+                <div class="stream">
+                    <button class="btn btn-netflix" onclick="changeStream('netflix')">
+                        <img src="./img/netflix-logo.png" height ="80" width="80" />
+                    </button>
+                    <span class="name-stream">Netflix</span>
+                </div>
+                <div class="stream">
+                    <button class="btn btn-disney" onclick="changeStream('disney')">
+                        <img src="./img/disney-plus-logo.png" height ="80" width="80" />
+                    </button>
+                    <span class="name-stream">Disney +</span>
+                </div>
+                <div class="stream">
+                    <button class="btn btn-prime" onclick="changeStream('prime')">
+                        <img src="./img/amazon-prime-video-logo.png" height ="80" width="80" />
+                    </button>
+                    <span class="name-stream">Prime Video</span>
+                </div>
+                <div class="stream">
+                    <button class="btn btn-hbo" onclick="changeStream('hbo')">
+                        <img src="./img/hbo-logo.png" height ="80" width="80" />
+                    </button>
+                    <span class="name-stream">HBO</span>
+                </div>
+            </div>
+        </div>
+        <div class="col list-movie">
+            <h1 class="title-stream"></h1>
+            <div class="list"></div>
+            <div class="pagination">
+                <button class="btn-pagination">Plus de film</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: rgb(49, 41, 41);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.list-stream {
+    flex: 1;
+}
+
+.sticky {
+    position: sticky;
+    top: 50px;
+}
+
+.list-movie {
+    flex: 3;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.stream {
+    margin: 30px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.title-stream {
+    text-align: center;
+}
+
+.name-stream {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.movie-panel {
+    height: 200px;
+    width: 230px;
+    border: solid 1px white;
+    border-radius: 10px;
+    margin: 50px 10px;
+    background: no-repeat;
+    background-size: cover;
+}
+
+.title-movie {
+    position: relative;
+    bottom: -200px;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-pagination {
+    background-color: rgb(196, 150, 31);
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin: 50px auto;
+    border: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
